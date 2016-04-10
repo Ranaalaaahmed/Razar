@@ -2,10 +2,10 @@
    <head>
    <style type="text/css">
    	body {
-  background-image: url('http://store2.up-00.com/2016-04/146024189938362.jpg');
+  background-image: url('slider.jpg');
   font-family: tahoma;
 }
-.frontform {
+.small-form {
   margin: 100px auto;
       text-align: center;
     width: 363px;
@@ -17,7 +17,7 @@
 
  
 
-  .log{
+  .head-the-form {
     width: 91.6%;
     background-color: #ddd;
     padding: 15px;
@@ -44,7 +44,7 @@ input {
     color: #888;
 }
 
- button {
+.log {
     width: 100%;
     background-color: rgb(0, 85, 255);
     color: #fff;
@@ -53,15 +53,16 @@ input {
     border-style: none;
     margin-top: 54px;
     text-decoration: none;
+    font-size: 20px;
 }
-button:hover{
+.log:hover{
 
 	color: black;
 }
 
 .razar{
 
-	background-image: url('http://store2.up-00.com/2016-04/146024189927811.jpg'); 
+	background-image: url('light-blue-background-website-design_489945.jpg'); 
 text-align: center;
 }
 img{
@@ -88,9 +89,10 @@ text-align: right;
 }
 </style>
 
+
    </head>  
    <body> 
-   	<div class="razar">  <img src="http://store2.up-00.com/2016-04/146024189938362.jpg">
+   	<div class="razar">  <img src="small-1168-5709768b4a743.png">
  <table cellpadding="40px">
    <tr>
    	<td>Home</td>
@@ -103,21 +105,30 @@ text-align: right;
  </div>
 
 
-   	<div class="frontform">
+   	<div class="small-form">
    
-      <h3 class="log"><span>Login</span> here to our site</h3>
+      <h3 class="head-the-form"><span>Login</span> here to our site</h3>
  
-    <form action="inter.html">
-      <input type="text" name="yourname" placeholder="Username"><br>
+    <form name="login" >
+      <input type="text" name="name" placeholder="Username"><br>
       <input type="password" name="password" placeholder="Your Password"><br>
        
-         <button><h3>Log-In</h3></button>
-
-        
-
-
-    </form>
-  </div>
-   </body>   
-
+<input  class="log "type="button" onclick="check(this.form)" value="Login"/>
+</form>
+</div>
+<script type="text/javascript">
+function check(form)
+{
+ 
+ if(form.name.value == "Rana" && form.password.value == "11")
+  {
+    window.open('inter.html')
+  }
+ else
+ {
+   alert("Invalid Username or Password ")
+  }
+}
+</script>
+</body>
 </html>
